@@ -13,8 +13,6 @@ class TaggitCounter():
     Usage Example:
         from taggit_helpers import TaggitCounter
 
-
-        @admin.register(MyModel)
         class MyModelAdmin(TaggitCounter, admin.ModelAdmin):
             list_display = (
                 ...
@@ -40,8 +38,6 @@ class TaggitListFilter(admin.SimpleListFilter):
     Usage Example:
         from taggit_helpers import TaggitListFilter
 
-
-        @admin.register(MyModel)
         class MyModelAdmin(admin.ModelAdmin):
             list_filter = [TaggitListFilter]
     """
@@ -79,8 +75,6 @@ class TaggitStackedInline(TaggitInlineBase, GenericStackedInline):
     Usage example:
         from taggit_helpers import TaggitStackedInline
 
-
-        @admin.register(MyModel)
         class MyModelAdmin(admin.ModelAdmin):
             inlines = [TaggitStackedInline]
     """
@@ -95,8 +89,6 @@ class TaggitTabularInline(TaggitInlineBase, GenericTabularInline):
     Usage example:
         from taggit_helpers import TaggitTabularInline
 
-
-        @admin.register(MyModel)
         class MyModelAdmin(admin.ModelAdmin):
             inlines = [TaggitTabularInline]
     """
