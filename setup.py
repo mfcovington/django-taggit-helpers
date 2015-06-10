@@ -1,5 +1,10 @@
 import os
+import sys
 from setuptools import setup
+
+if sys.version < '3.2':
+    print("Sorry, django-taggit-helpers currently requires Python 3.2+.")
+    sys.exit(1)
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
@@ -8,7 +13,8 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 install_requires = [
-    "django-taggit",
+    'django>=1.7,<1.8',
+    'django-taggit>=0.12.0',
 ]
 
 setup(
