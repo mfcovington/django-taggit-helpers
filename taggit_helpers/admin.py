@@ -19,6 +19,8 @@ class TaggitCounter():
                 'taggit_count',
             )
 
+    Note: Currently, the TaggableManager() field must be named 'tags'.
+
     Note: To avoid overcounting, set distinct=True if further annotating the queryset with Count():
 
         queryset.annotate(m2m_field_count=Count('m2m_field', distinct=True))
