@@ -39,6 +39,12 @@ Display (and sort by) number of Taggit tags associated with tagged items.
             'taggit_count',
         )
 
+*Note: To avoid overcounting, set* ``distinct=True``*if further annotating the queryset with* ``Count()``:
+
+.. code-block:: python
+
+    queryset.annotate(m2m_field_count=Count('m2m_field', distinct=True))
+
 ``TaggitListFilter``
 --------------------
 
