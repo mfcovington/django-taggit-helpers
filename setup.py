@@ -2,7 +2,7 @@ import os
 import sys
 from setuptools import setup
 
-if sys.version < '3.2':
+if sys.version_info < (3, 2):
     print("Sorry, django-taggit-helpers currently requires Python 3.2+.")
     sys.exit(1)
 
