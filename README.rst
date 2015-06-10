@@ -21,8 +21,8 @@ Installation
 
     pip install https://github.com/mfcovington/django-taggit-helpers/releases/download/0.0.0/django-taggit-helpers-0.0.0.tar.gz
 
-Helper Clases
-=============
+Helper Classes
+==============
 
 ``TaggitCounter``
 -----------------
@@ -39,9 +39,9 @@ Display (and sort by) number of Taggit tags associated with tagged items.
             'taggit_count',
         )
 
-*Note: Currently, the* ``TaggableManager()`` *field must be named* ``tags``.
+*Note:* Currently, the ``TaggableManager()`` field must be named ``tags``.
 
-*Note: To avoid overcounting, set* ``distinct=True``*if further annotating the queryset with* ``Count()``:
+*Note:* To avoid overcounting, set ``distinct=True`` if further annotating the queryset with ``Count()``:
 
 .. code-block:: python
 
