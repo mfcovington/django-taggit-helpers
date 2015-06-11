@@ -6,8 +6,11 @@ if sys.version_info < (3, 2):
     print("Sorry, django-taggit-helpers currently requires Python 3.2+.")
     sys.exit(1)
 
-with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
-    README = readme.read()
+# From: https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
+def read(*paths):
+    """Build a file path from *paths* and return the contents."""
+    with open(os.path.join(*paths), 'r') as f:
+        return f.read()
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
@@ -19,13 +22,14 @@ install_requires = [
 
 setup(
     name='django-taggit-helpers',
-    version='0.0.0',
+    version='0.1.0',
     packages=['taggit_helpers'],
     include_package_data=True,
     license='BSD License',
     keywords='tags tagging taggit django-taggit',
     description='Django admin helper classes for django-taggit tags',
-    long_description=README,
+    long_description=(read('README.rst') + '\n\n' +
+                      read('CHANGELOG.rst')),
     url='https://github.com/mfcovington/django-taggit-helpers',
     author='Michael F. Covington',
     author_email='mfcovington@gmail.com',
