@@ -3,7 +3,8 @@ django-taggit-helpers
 *********************
 
 ``django-taggit-helpers`` makes it easier to work with admin pages of models associated with ``django-taggit`` tags.
-Information about ``django-taggit`` is available on `GitHub <https://github.com/alex/django-taggit>`_ and `Read the Docs <http://django-taggit.readthedocs.org/en/latest/index.html>`_.
+
+Source code is available on GitHub at `mfcovington/django-taggit-helpers <https://github.com/mfcovington/django-taggit-helpers>`_. Information about ``django-taggit`` is available on `GitHub <https://github.com/alex/django-taggit>`_ and `Read the Docs <http://django-taggit.readthedocs.org/en/latest/index.html>`_.
 
 .. contents:: :local:
 
