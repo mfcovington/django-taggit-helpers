@@ -23,6 +23,7 @@ setup(
     packages=['taggit_helpers'],
     include_package_data=True,
     license='BSD License',
+    keywords='tags tagging taggit django-taggit',
     description='Django admin helper classes for django-taggit tags',
     long_description=README,
     url='https://github.com/mfcovington/django-taggit-helpers',
