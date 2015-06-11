@@ -23,6 +23,19 @@ Installation
 
     pip install https://github.com/mfcovington/django-taggit-helpers/releases/download/0.1.0/django-taggit-helpers-0.1.0.tar.gz
 
+Configuration
+=============
+
+Add ``taggit_helpers`` to ``INSTALLED_APPS`` in ``settings.py``:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'taggit',
+        'taggit_helpers',
+    )
+
 Helper Classes
 ==============
 
