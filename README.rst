@@ -51,7 +51,7 @@ Display (and sort by) number of Taggit tags associated with tagged items.
     class MyModelAdmin(TaggitCounter, admin.ModelAdmin):    # TaggitCounter before ModelAdmin
         list_display = (
             ...
-            'taggit_count',
+            'taggit_counter',
         )
 
 *Note:* Currently, the ``TaggableManager()`` field must be named ``tags``.
