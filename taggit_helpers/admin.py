@@ -16,7 +16,7 @@ class TaggitCounter():
         class MyModelAdmin(TaggitCounter, admin.ModelAdmin):
             list_display = (
                 ...
-                'taggit_count',
+                'taggit_counter',
             )
 
     Note: Currently, the TaggableManager() field must be named 'tags'.
@@ -28,12 +28,12 @@ class TaggitCounter():
 
     def queryset(self, request):
         queryset = self.model.objects.get_query_set()
-        return queryset.annotate(taggit_count=Count('tags', distinct=True))
+        return queryset.annotate(taggit_counter=Count('tags', distinct=True))
 
-    def taggit_count(self, obj):
-        return obj.taggit_count
-    taggit_count.admin_order_field = 'taggit_count'
-    taggit_count.short_description = '# of Tags'
+    def taggit_counter(self, obj):
+        return obj.taggit_counter
+    taggit_counter.admin_order_field = 'taggit_counter'
+    taggit_counter.short_description = '# of Tags'
 
 
 class TaggitListFilter(admin.SimpleListFilter):

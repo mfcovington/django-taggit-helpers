@@ -21,7 +21,20 @@ Installation
 
 .. code-block:: sh
 
-    pip install https://github.com/mfcovington/django-taggit-helpers/releases/download/0.1.0/django-taggit-helpers-0.1.0.tar.gz
+    pip install https://github.com/mfcovington/django-taggit-helpers/releases/download/0.1.1/django-taggit-helpers-0.1.1.tar.gz
+
+Configuration
+=============
+
+Add ``taggit_helpers`` to ``INSTALLED_APPS`` in ``settings.py``:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'taggit',
+        'taggit_helpers',
+    )
 
 Helper Classes
 ==============
@@ -38,7 +51,7 @@ Display (and sort by) number of Taggit tags associated with tagged items.
     class MyModelAdmin(TaggitCounter, admin.ModelAdmin):    # TaggitCounter before ModelAdmin
         list_display = (
             ...
-            'taggit_count',
+            'taggit_counter',
         )
 
 *Note:* Currently, the ``TaggableManager()`` field must be named ``tags``.
@@ -93,4 +106,4 @@ Issues
 
 If you experience any problems or would like to request a feature, please `create an issue <https://github.com/mfcovington/django-taggit-helpers/issues>`_ on GitHub.
 
-*Version 0.1.0*
+*Version 0.1.1*
