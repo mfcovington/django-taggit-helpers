@@ -26,8 +26,8 @@ class TaggitCounter():
         queryset.annotate(m2m_field_count=Count('m2m_field', distinct=True))
     """
 
-    def queryset(self, request):
-        queryset = self.model.objects.get_query_set()
+    def get_queryset(self, request):
+        queryset = self.model.objects.get_queryset()
         return queryset.annotate(taggit_counter=Count('tags', distinct=True))
 
     def taggit_counter(self, obj):
