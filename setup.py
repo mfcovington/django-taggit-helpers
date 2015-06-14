@@ -22,7 +22,7 @@ install_requires = [
 
 setup(
     name='django-taggit-helpers',
-    version='0.1.1',
+    version='0.1.2',
     packages=['taggit_helpers'],
     include_package_data=True,
     license='BSD License',
