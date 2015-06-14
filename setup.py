@@ -16,7 +16,7 @@ def read(*paths):
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 install_requires = [
-    'django>=1.7,<1.8',
+    'django>=1.7',
     'django-taggit>=0.12.0',
 ]
 
