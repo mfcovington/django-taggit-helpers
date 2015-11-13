@@ -6,6 +6,8 @@ django-taggit-helpers
 
 Source code is available on GitHub at `mfcovington/django-taggit-helpers <https://github.com/mfcovington/django-taggit-helpers>`_. Information about ``django-taggit`` is available on `GitHub <https://github.com/alex/django-taggit>`_ and `Read the Docs <http://django-taggit.readthedocs.org/en/latest/index.html>`_.
 
+``django-taggit-helpers`` is compatible with Python 2.7+/3.2+ and Django 1.7+.
+
 .. contents:: :local:
 
 Installation

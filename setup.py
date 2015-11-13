@@ -2,9 +2,11 @@ import os
 import sys
 from setuptools import setup
 
-#if sys.version_info < (3, 2):
-#    print("Sorry, django-taggit-helpers currently requires Python 3.2+.")
-#    sys.exit(1)
+
+if ((sys.version_info < (2, 7))
+        | ((sys.version_info.major == 3) & (sys.version_info.minor < 2))):
+    print("Sorry, django-taggit-helpers currently requires Python 2.7+/3.2+.")
+    sys.exit(1)
 
 # From: https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 def read(*paths):
@@ -43,11 +45,12 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3 :: Only',
     ],
     install_requires=install_requires,
 )
