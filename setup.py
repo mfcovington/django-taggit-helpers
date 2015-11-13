@@ -2,9 +2,9 @@ import os
 import sys
 from setuptools import setup
 
-if sys.version_info < (3, 2):
-    print("Sorry, django-taggit-helpers currently requires Python 3.2+.")
-    sys.exit(1)
+#if sys.version_info < (3, 2):
+#    print("Sorry, django-taggit-helpers currently requires Python 3.2+.")
+#    sys.exit(1)
 
 # From: https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 def read(*paths):
