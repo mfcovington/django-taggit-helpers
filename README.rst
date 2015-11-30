@@ -23,7 +23,7 @@ Installation
 
 .. code-block:: sh
 
-    pip install https://github.com/mfcovington/django-taggit-helpers/releases/download/0.1.2/django-taggit-helpers-0.1.2.tar.gz
+    pip install https://github.com/mfcovington/django-taggit-helpers/releases/download/0.1.3/django-taggit-helpers-0.1.3.tar.gz
 
 Configuration
 =============
@@ -108,4 +108,4 @@ Issues
 
 If you experience any problems or would like to request a feature, please `create an issue <https://github.com/mfcovington/django-taggit-helpers/issues>`_ on GitHub.
 
-*Version 0.1.2*
+*Version 0.1.3*
