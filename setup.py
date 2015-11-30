@@ -2,8 +2,10 @@ import os
 import sys
 from setuptools import setup
 
-if sys.version_info < (3, 2):
-    print("Sorry, django-taggit-helpers currently requires Python 3.2+.")
+
+if ((sys.version_info < (2, 7))
+        | ((sys.version_info.major == 3) & (sys.version_info.minor < 2))):
+    print("Sorry, django-taggit-helpers currently requires Python 2.7+/3.2+.")
     sys.exit(1)
 
 # From: https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
@@ -22,7 +24,7 @@ install_requires = [
 
 setup(
     name='django-taggit-helpers',
-    version='0.1.2',
+    version='0.1.3',
     packages=['taggit_helpers'],
     include_package_data=True,
     license='BSD License',
@@ -38,15 +40,17 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 1.7',
+        'Framework :: Django :: 1.8',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3 :: Only',
     ],
     install_requires=install_requires,
 )

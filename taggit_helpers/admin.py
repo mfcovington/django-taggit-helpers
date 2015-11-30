@@ -15,7 +15,7 @@ class TaggitCounter():
 
         class MyModelAdmin(TaggitCounter, admin.ModelAdmin):
             list_display = (
-                ...
+                # ...
                 'taggit_counter',
             )
 
