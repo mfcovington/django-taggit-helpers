@@ -118,7 +118,7 @@ App loading was refactored in Django 1.9. To make a Django 1.7/1.8 app Django 1.
 
 .. code-block:: sh
 
-    find . -name '*py' | xargs sed -ie 's/from taggit_helpers import/from taggit_helpers.admin import/'
+    find . -name '*py' | xargs sed -i '' 's/from taggit_helpers import/from taggit_helpers.admin import/'
 
 Thanks to `jpic <https://github.com/jpic>`_ for the `inspiration <https://github.com/yourlabs/django-autocomplete-light/commit/d87a3ba8be745ff3e5142d9438f3b8318f4bf547>`_ for this snippet!
 
