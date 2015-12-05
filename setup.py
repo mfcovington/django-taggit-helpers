@@ -24,7 +24,7 @@ install_requires = [
 
 setup(
     name='django-taggit-helpers',
-    version='0.1.3',
+    version='0.1.4',
     packages=['taggit_helpers'],
     include_package_data=True,
     license='BSD License',
@@ -41,6 +41,7 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 1.7',
         'Framework :: Django :: 1.8',
+        'Framework :: Django :: 1.9',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
