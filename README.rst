@@ -19,11 +19,11 @@ Installation
 
     pip install django-taggit-helpers
 
-**GitHub**
+**GitHub (development branch)**
 
 .. code-block:: sh
 
-    pip install https://github.com/mfcovington/django-taggit-helpers/releases/download/0.1.3/django-taggit-helpers-0.1.3.tar.gz
+    pip install git+http://github.com/mfcovington/django-taggit-helpers.git@develop
 
 Configuration
 =============
