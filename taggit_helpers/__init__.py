@@ -7,4 +7,4 @@ if django.VERSION < (1, 9):
 
 default_app_config = 'taggit_helpers.apps.TaggitHelpersConfig'
 
-__version__ = '0.1.3'
+__version__ = '0.1.4'

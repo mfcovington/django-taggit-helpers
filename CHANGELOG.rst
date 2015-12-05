@@ -1,6 +1,11 @@
 Revision history
 ================
 
+0.1.4 2015-12-04
+
+- Add Django 1.9 compatibility
+
+
 0.1.3 2015-11-30
 
 - Require Python 2.7+/3.2+

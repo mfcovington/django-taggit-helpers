@@ -127,4 +127,4 @@ Issues
 
 If you experience any problems or would like to request a feature, please `create an issue <https://github.com/mfcovington/django-taggit-helpers/issues>`_ on GitHub.
 
-*Version 0.1.3*
+*Version 0.1.4*
