@@ -59,7 +59,8 @@ class TaggitListFilter(admin.SimpleListFilter):
 
     def queryset(self, request, queryset):
         if self.value() is not None:
-            return queryset.filter(tags__name=self.value())
+            return queryset.filter(tags__name=self.value()).distinct()
+        return queryset
 
 
 class TaggitInlineBase():
