@@ -52,8 +52,9 @@ class TaggitListFilter(admin.SimpleListFilter):
     parameter_name = 'tag'
 
     def lookups(self, request, model_admin):
+        tag_model = getattr(model_admin, 'tag_model', TaggedItem)
         model_tags = [tag.name for tag in
-            TaggedItem.tags_for(model_admin.model)]
+            tag_model.tags_for(model_admin.model)]
         model_tags.sort()
         return tuple([(tag, tag) for tag in model_tags])
 
